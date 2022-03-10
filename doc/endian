@@ -1,0 +1,15 @@
+# save Bytes ... In order
+big-endian
+# save Bytes ... Up side down
+little-endian
+
+HBO: The method of saving Bytes In host (Host Byte Order)
+NBO: The mothod of saving Bytes In TCP/IP (Network Byte Order)
+
+[FORM]
+<host>
+			TCP or UDP
+(HBO)	-------NBO-------->
+	
+(HBO)	<------NBO---------
+			TCP or UDP

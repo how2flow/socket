@@ -1,0 +1,7 @@
+# /etc/hosts
+
+[FORM]
+ip	DNS
+
+e.g.
+192.168.0.100	www.dns.com	

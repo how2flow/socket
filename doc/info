@@ -1,0 +1,37 @@
+# TCP/IP
+# Date: 2022.03.10
+# Author: jkhpro1003@gmail.com
+
+[Layer]
+Application # SMTP, Telnet, FTP, HTTP
+Transmission # TCP, UDP
+Network # IP, ARP, ICMP
+Network-Access # Ethernet, FDDI, ...
+Hardware
+
+[Network]
+destination: host
+address: IP
+process gate: port
+
+[INTERFACE]
+############################################################
+	<client>									<server>
+*. Application								*. Application
+1. <socket API>								8. <socket API>
+2. TCP/UDP									7. TCP/UDP
+3. IP										6. IP
+4. Eternet			..............			5. Ethernet
+############################################################
+
+[FUNCTION]
+socket()
+bind() # server only
+listen() # server only
+connect() # client only
+accept() # server only
+send()
+recv()
+sendto()
+recvfrom()
+close()
